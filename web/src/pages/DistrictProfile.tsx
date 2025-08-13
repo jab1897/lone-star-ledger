@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { fetchDistrict } from "@/api/client";
 import Plotly from "plotly.js-dist-min";
-import ShareButton from "@/components/ShareButton";
 import { useEffect, useRef, useState } from "react";
 
 const fmtNum = (n:any)=> isFinite(Number(n)) ? Number(n).toLocaleString(): "—";
@@ -35,7 +34,6 @@ export default function DistrictProfile(){
         <div className="toggle">
           <label className="small">Per student</label>
           <input type="checkbox" checked={perStudent} onChange={e=>setPerStudent(e.target.checked)} />
-          <ShareButton/>
         </div>
       </div>
 
