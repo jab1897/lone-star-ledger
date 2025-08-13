@@ -1,10 +1,16 @@
-export default function Methodology(){
+export default function Download(){
   return (
     <div className="container">
-      <h2>Methodology</h2>
+      <h2>Download Center</h2>
       <div className="card">
-        <p>MVP joins datasets by <b>DISTRICT_N (CDN)</b>. Finance defaults to per-student metrics; totals available via API.</p>
-        <p>Polygons are simplified for mobile performance. Data is processed in Colab and published to GitHub Pages.</p>
+        <p>Raw JSON slices are hosted on GitHub Pages (read-only):</p>
+        <ul>
+          <li><a href="https://jab1897.github.io/lsl-data/slices/districts_index.json" target="_blank">districts_index.json</a></li>
+          <li><a href="https://jab1897.github.io/lsl-data/slices/districts_metrics.json" target="_blank">districts_metrics.json</a></li>
+          <li><a href="https://jab1897.github.io/lsl-data/slices/campuses_index.json" target="_blank">campuses_index.json</a></li>
+          <li><a href="https://jab1897.github.io/lsl-data/slices/map_districts_topo.json" target="_blank">map_districts_topo.json</a></li>
+          <li><a href="https://jab1897.github.io/lsl-data/slices/map_campuses.json" target="_blank">map_campuses.json</a></li>
+        </ul>
       </div>
     </div>
   );
