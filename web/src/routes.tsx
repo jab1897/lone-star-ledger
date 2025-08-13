@@ -14,3 +14,4 @@ export const router = createBrowserRouter([
   { path:"/methodology", element:<Methodology/> },
   { path:"/district/:id", element:<DistrictProfile/> }
 ]);
+
